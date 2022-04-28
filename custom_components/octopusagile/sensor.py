@@ -54,7 +54,7 @@ class PreviousRate(Entity):
         return "p/kWh"
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return the state attributes of the sensor."""
         return self._attributes
 
@@ -126,7 +126,7 @@ class CurrentRate(Entity):
         return "p/kWh"
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return the state attributes of the sensor."""
         return self._attributes
 
@@ -193,7 +193,7 @@ class NextRate(Entity):
         return "p/kWh"
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return the state attributes of the sensor."""
         return self._attributes
 
@@ -261,7 +261,7 @@ class MinRate(Entity):
         return "p/kWh"
 
     @property
-    def device_state_attributes(self):
+    def extra_state_attributes(self):
         """Return the state attributes of the sensor."""
         return self._attributes
 
